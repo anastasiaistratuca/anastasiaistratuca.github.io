@@ -1,162 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Anastasia Istratuca</title>
-  <meta name="description" content="Applied mathematician specialising in scientific computing, numerical methods, and quantum algorithms.">
+  <meta name="description"
+    content="Applied mathematician specialising in scientific computing, numerical methods, and quantum algorithms.">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <div class="nav-container">
-    <div class="logo-and-toggle">
-      <strong>Anastasia Istratuca</strong>
-      <button id="toggle">🌙</button>
+  <header>
+    <div class="nav-container">
+      <div class="logo-and-toggle">
+        <strong>Anastasia Istratuca</strong>
+        <button id="toggle">🌙</button>
+      </div>
+
+      <nav>
+        <a href="index.html">0. About</a>
+        <a href="work.html">1. Work</a>
+        <a href="projects.html">2. Projects</a>
+        <a href="#">3. Skills</a>
+        <a href="#">4. Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TODO: add links to all projects including BSc and MSc and Riverlane. -->
+
+  <main class="content-container">
+
+    <div class="timeline">
+
+      <a href="#bsc" class="timeline-node">
+        <span class="year">2017-2020</span>
+        <span class="dot"></span>
+        <span class="label">BSc</span>
+      </a>
+
+      <a href="#citrix" class="timeline-node">
+        <span class="year">2020</span>
+        <span class="dot"></span>
+        <span class="label">Citrix</span>
+      </a>
+
+      <a href="#msc" class="timeline-node">
+        <span class="year">2020-2021</span>
+        <span class="dot"></span>
+        <span class="label">MSc</span>
+      </a>
+
+      <a href="#phd" class="timeline-node">
+        <span class="year">2021-2025</span>
+        <span class="dot"></span>
+        <span class="label">PhD</span>
+      </a>
+
+      <a href="#riverlane" class="timeline-node">
+        <span class="year">2025-2026</span>
+        <span class="dot"></span>
+        <span class="label">Riverlane</span>
+      </a>
     </div>
 
-    <nav>
-      <a href="index.html">0. About</a>
-      <a href="work.html">1. Work</a>
-      <a href="#">2. Projects</a>
-      <a href="#">3. Skills</a>
-      <a href="#">4. Contact</a>
-    </nav>
-  </div>
-</header>
+    <section class="career-section">
 
+      <div class="career-item" id="riverlane">
+        <div class="career-date">
+          09/2025 - 01/2026
+        </div>
 
-<main class="work-container">
+        <div class="career-content">
 
-  <div class="timeline">
+          <h3>PhD Intern</h3>
 
-  <a href="#bsc" class="timeline-node">
-    <span class="year">2017-2020</span>
-    <span class="dot"></span>
-    <span class="label">BSc</span>
-  </a>
+          <p class="institution">
+            <a href="https://www.riverlane.com/" class="links" target="_blank" style="color:#93252a;">
+              Riverlane
+            </a>
+          </p>
 
-  <a href="#citrix" class="timeline-node">
-    <span class="year">2020</span>
-    <span class="dot"></span>
-    <span class="label">Citrix</span>
-  </a>
+          <ul>
 
-  <a href="#msc" class="timeline-node">
-    <span class="year">2020-2021</span>
-    <span class="dot"></span>
-    <span class="label">MSc</span>
-  </a>
+            <li>
+              Implemented a <strong>variational optimisation algorithm</strong> for factorising high-dimensional tensors with applications in
+              quantum chemistry simulations.
+            </li>
 
-  <a href="#phd" class="timeline-node">
-    <span class="year">2021-2025</span>
-    <span class="dot"></span>
-    <span class="label">PhD</span>
-  </a>
+            <li>
+              Developed the corresponding <strong>Python implementation</strong>, using <strong>PySCF</strong> for quantum chemistry data and <strong>JAX</strong> for automatic differentiation and optimisation.
+            </li>
 
-  <a href="#riverlane" class="timeline-node">
-    <span class="year">2025-2026</span>
-    <span class="dot"></span>
-    <span class="label">Riverlane</span>
-  </a>
-  </div>
+            <li>
+              Collaborated with researchers and engineers to integrate the
+              algorithm into an internal <strong>quantum chemistry software framework</strong>.
+            </li>
 
-<section class="career-section">
+            <li>
+              Investigated a <strong>state preparation method with optimal T-gate count</strong> for quantum algorithms.
+            </li>
 
-    <div class="career-item" id="riverlane">
-    <div class="career-date">
-      September 2025 - Janaury 2026
+          </ul>
+
+          <p class="tech-stack">
+            Tech: Python • JAX • PySCF • Variational Optimisation • Quantum Algorithms • Block-Encoding • Spectrum Amplification
+          </p>
+
+        </div>
+      </div>
+
+      <div class="career-item" id="phd">
+        <div class="career-date">
+          09/2021 - 09/2025
+        </div>
+
+        <div class="career-content">
+
+          <h3>PhD Applied Mathematics</h3>
+
+          <p class="institution">
+            <a href="https://www.mac-migs.ac.uk/" class="links" target="_blank" style="color:#93252a;">
+              MAC-MIGS CDT, University of Edinburgh & Heriot-Watt University
+            </a>
+          </p>
+
+          <ul>
+
+            <li>
+              <strong>Outcome:</strong> Pass with minor corrections
+              (Examiners:
+              <a href="https://scholar.google.com/citations?user=Iehle6kAAAAJ&hl=en" target="_blank" class="links">Mike
+                Giles</a>,
+              <a href="https://scholar.google.com/citations?user=DHQy3wcHP4kC&hl=en" target="_blank" class="links">Des
+                Higham</a>)
+            </li>
+
+            <li>
+              <strong>
+                <a href="https://era.ed.ac.uk/items/e6210c64-0593-405f-ae2d-600fae342161" class="links" target="_blank"
+                  style="text-decoration:underline;">
+                  Thesis</a></strong>:
+              Multilevel Monte Carlo Methods for Uncertainty Quantification
+            </li>
+
+            <li>
+              <strong>
+                <a href="https://academic.oup.com/imajna/article/45/5/3138/8029977" class="links" target="_blank"
+                  style="text-decoration:underline;">
+                  Publication</a></strong>:
+              Smoothed Circulant Embedding with Applications to Multilevel Monte Carlo Methods
+              for PDEs with Random Coefficients
+            </li>
+
+            <li>
+              <strong>Research Projects</strong>:
+              <div class="projects-grid">
+                <!-- TODO: add images to each project card -->
+                <a href="projects.html#deep-learning-bvpl" class="project-card">
+                  <h4>Smoothed Circulant Embedding</h4>
+                  <p>
+                    Developed a sampling method for rough random fields and integrated within multilevel Monte Carlo for
+                    PDEs with random coefficients.
+                  </p>
+                  <!-- <img src="images/mlmc_plot.png" class="project-image"> -->
+                </a>
+
+                <a href="projects.html#mlmc-smoothness" class="project-card">
+                  <h4>MLMC with Level-Dependent Smoothness</h4>
+                  <p>
+                    Investigated multilevel Monte Carlo algorithms for PDE models with varying regularity across
+                    discretisation levels.
+                  </p>
+                </a>
+
+                <a href="projects.html#radiative-transport" class="project-card">
+                  <h4>MLMC for Radiative Transport Equation</h4>
+                  <p>
+                    Investigated multilevel Monte Carlo approaches for radiative transport simulations with random
+                    input.
+                  </p>
+                </a>
+
+                <a href="projects.html#chaotic-systems" class="project-card">
+                  <h4>MLMC for Chaotic Systems</h4>
+                  <p>
+                    Explored multilevel Monte Carlo methods for uncertainty quantification in chaotic dynamical systems.
+                  </p>
+                </a>
+
+                <a href="projects.html#model-selection" class="project-card">
+                  <h4>Model Selection by Simulation</h4>
+                  <p>
+                    Studied simulation-based approaches for selecting
+                    statistical models under uncertainty.
+                  </p>
+                </a>
+
+                <a href="projects.html#quantum-annealing" class="project-card">
+                  <h4>Simulating Quantum Annealing</h4>
+                  <p>
+                    Investigated numerical simulations of quantum and simulated annealing algorithms for optimisation
+                    problems.
+                  </p>
+                </a>
+
+              </div>
+            </li>
+
+            <br>
+
+            <li>
+              <strong>Advanced Courses</strong>:
+              Computational Methods for Data-Driven Modelling,
+              Mathematical Modelling and Applied Analysis,
+              Finite Element Methods,
+              Kinetic Equations,
+              High Performance Computing (HPC)
+            </li>
+
+          </ul>
+
+          <p class="tech-stack">
+            Tech: Python • C/C++ • Uncertainty Quantification • Scientific Computing • Monte Carlo Methods • Numerical
+            PDEs • HPC
+          </p>
+
+        </div>
+      </div>
+
+      <div class="career-item" id="msc">
+        <div class="career-date">
+          09/2020 - 08/2021
+        </div>
+
+        <div class="career-content">
+          <h3>MSc Computational Applied Mathematics</h3>
+
+          <p class="institution">
+            <a href="https://study.ed.ac.uk/programmes/postgraduate-taught/935-computational-applied-mathematics"
+              class="links" target="_blank" style="color:#93252a;">
+              University of Edinburgh
+            </a>
+          </p>
+
+          <ul>
+            <li><strong>Distinction</strong> - 83% overall.</li>
+
+            <li>
+              <strong><a href="docs/MSc_dissertation.pdf" class="links" target="_blank"
+                  style="text-decoration: underline;">Thesis</a></strong>:
+              Efficient uncertainty quantification and risk assessment in PDE models.
+            </li>
+
+            <li><strong>Numerical Methods:</strong>
+              Numerical ODEs, Numerical PDEs, Applied SDEs, Numerical Linear Algebra.
+            </li>
+
+            <li><strong>Statistics & Optimisation:</strong>
+              Bayesian Theory, Statistical Programming,
+              Fundamentals of Optimisation,
+              Large-Scale Optimisation for Data Science.
+            </li>
+          </ul>
+
+          <p class="tech-stack">
+            Tech: Python • MATLAB • R • HPC • Numerical Methods • Optimisation • Uncertainty Quantification
+          </p>
+        </div>
+      </div>
+
+      <div class="career-item" id="citrix">
+        <div class="career-date">
+          06/2020 - 09/2020
+        </div>
+
+        <div class="career-content">
+          <h3>Cloud Computing Intern</h3>
+          <p class="institution"><a href="https://www.citrix.com/" class="links" target="_blank"
+              style="color: #93252a;">Citrix</a></p>
+
+          <ul>
+            <li>Supported deployment and configuration of cloud services running on <b>Kubernetes</b> clusters.</li>
+            <li>Maintained <b>Helm charts</b> and <b>YAML manifests</b> for application deployment.</li>
+            <li>Implemented monitoring and alerting pipelines using <b>Prometheus.</b></li>
+            <li>Contributed to infrastructure provisioning with <b>Terraform</b>.</li>
+            <li>Worked with <b>Elasticsearch</b>-based logging systems to monitor service behaviour.</li>
+            <li>Assisted in maintaining CI/CD workflows using <b>Jenkins</b>.</li>
+            <li>Learnt and practiced <b>Scrum</b> framework within the Agile methodology.</li>
+          </ul>
+          <p class="tech-stack">
+            <b>Tech</b>: Kubernetes • Helm • Terraform • Prometheus • Elasticsearch • Jenkins • YAML
+          </p>
+        </div>
+      </div>
+
+      <div class="career-item" id="bsc">
+        <div class="career-date">
+          09/2017 - 07/2020
+        </div>
+
+        <div class="career-content">
+          <h3>BSc Mathematics and Computer Science</h3>
+          <p class="institution"><a
+              href="https://www.birmingham.ac.uk/study/undergraduate/subjects/mathematics-courses/mathematics-computer-science-bsc"
+              class="links" target="_blank" style="color: #93252a;">University of Birmingham</a></p>
+
+          <ul>
+            <li><strong>First Class Honours</strong> - 84% overall.</li>
+            <li><strong><a href="docs/BSc_project.pdf" class="links" target="_blank"
+                  style="text-decoration: underline;">Final Year Project</a></strong>: Neural Network Function
+              Approximation.</li>
+            <li><strong>Computer Science:</strong>
+              Data Structures & Algorithms, Machine Learning,
+              Neural Computation, Intelligent Data Analysis.
+            </li>
+
+            <li><strong>Mathematics:</strong>
+              Differential Equations, Linear Algebra,
+              Probability & Statistics, Numerical Methods.
+            </li>
+          </ul>
+
+          <p class="tech-stack">
+            Tech: JAVA • Python • C/C++ • MATLAB • SQL • OCaml • Neural Networks • Complexity Theory
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      © 2026 Anastasia Istratuca
     </div>
+  </footer>
 
-    <div class="career-content">
-      <h3>PhD Intern</h3>
-      <p class="institution"><a href="https://www.riverlane.com/" class="links" target="_blank" style="color: #93252a;">Riverlane</a></p>
-
-      <ul>
-        <li>Role responsibilities</li>
-        <li>Projects worked on</li>
-        <li>Technologies used</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="career-item" id="phd">
-    <div class="career-date">
-     2021 - 2025
-    </div>
-
-    <div class="career-content">
-      <h3>PhD Applied Mathematics</h3>
-      <p class="institution"> <a href="https://www.mac-migs.ac.uk/" class="links" target="_blank" style="color: #93252a;">MAC-MIGS CDT, University of Edinburgh and Heriot-Watt University</a></p>
-
-      <ul>
-        <li>Pass with minor corrections; Examiners: <a href="https://scholar.google.com/citations?user=Iehle6kAAAAJ&hl=en" target="_blank" class="links">Mike Giles</a> and <a href="https://scholar.google.com/citations?user=DHQy3wcHP4kC&hl=en" target="_blank" class="links">Des Higham</a></li>
-        <li>Publications / conferences</li>
-        <li>Algorithms developed</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="career-item" id="msc">
-    <div class="career-date">
-      2020 - 2021
-    </div>
-
-    <div class="career-content">
-      <h3>MSc Computational Applied Mathematics</h3>
-      <p class="institution"><a href="https://study.ed.ac.uk/programmes/postgraduate-taught/935-computational-applied-mathematics" class="links" target="_blank" style="color: #93252a;">University of Edinburgh</a></p>
-
-      <ul>
-        <li>Distinction - 83%</li>
-        <li>Thesis topic</li>
-        <li>Key research skills</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="career-item" id="citrix">
-    <div class="career-date">
-      June 2020 - September 2020
-    </div>
-
-    <div class="career-content">
-      <h3>Cloud Computing Intern</h3>
-      <p class="institution"><a href="https://www.citrix.com/" class="links" target="_blank" style="color: #93252a;">Citrix</a></p>
-
-      <ul>
-        <li>Role responsibilities</li>
-        <li>Projects worked on</li>
-        <li>Technologies used</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="career-item" id="bsc">
-    <div class="career-date">
-      2017 - 2020
-    </div>
-
-    <div class="career-content">
-      <h3>BSc Mathematics and Computer Science</h3>
-      <p class="institution"><a href="https://www.birmingham.ac.uk/study/undergraduate/subjects/mathematics-courses/mathematics-computer-science-bsc" class="links" target="_blank" style="color: #93252a;">University of Birmingham</a></p>
-
-      <ul>
-        <li>First Class Honours - 84%</li>
-        <li>Dissertation title</li>
-        <li>Relevant coursework</li>
-      </ul>
-    </div>
-  </div>
-
-</section> 
-</main>
-
-<footer>
-  <div class="footer-container">
-    © 2026 Anastasia Istratuca
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

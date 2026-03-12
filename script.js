@@ -7,7 +7,7 @@ if (localStorage.getItem("theme") === "dark") {
   toggle.textContent = "☀️";
 }
 
-toggle.addEventListener("click", function() {
+toggle.addEventListener("click", function () {
   body.classList.toggle("dark-mode");
 
   if (body.classList.contains("dark-mode")) {

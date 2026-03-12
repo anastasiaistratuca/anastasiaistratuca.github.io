@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Anastasia Istratuca</title>
-  <meta name="description" content="Applied mathematician specialising in scientific computing, numerical methods, and quantum algorithms.">
+  <meta name="description"
+    content="Applied mathematician specialising in scientific computing, numerical methods, and quantum algorithms.">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <div class="nav-container">
-    <div class="logo-and-toggle">
-      <strong>Anastasia Istratuca</strong>
-      <button id="toggle">🌙</button>
+  <header>
+    <div class="nav-container">
+      <div class="logo-and-toggle">
+        <strong>Anastasia Istratuca</strong>
+        <button id="toggle">🌙</button>
+      </div>
+
+      <nav>
+        <a href="index.html">0. About</a>
+        <a href="work.html">1. Work</a>
+        <a href="projects.html">2. Projects</a>
+        <a href="#">3. Skills</a>
+        <a href="#">4. Contact</a>
+      </nav>
     </div>
-
-    <nav>
-      <a href="index.html">0. About</a>
-      <a href="work.html">1. Work</a>
-      <a href="#">2. Projects</a>
-      <a href="#">3. Skills</a>
-      <a href="#">4. Contact</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
 
-<main class="about-container">
+  <main class="content-container">
 
-  <section class="about-hero">
-    
-    <div class="photo-box">
-      <img src="profile.jpg" alt="Anastasia Istratuca">
+    <section class="about-hero">
+
+      <div class="photo-box">
+        <img src="images/profile.jpg" alt="Anastasia Istratuca">
+      </div>
+
+      <div class="intro-box">
+        <h1>Anastasia Istratuca</h1>
+        <p class="personal-statement">
+          I am a computational mathematician with a PhD in Applied Mathematics, specialising in numerical simulation,
+          uncertainty quantification, and algorithm design for complex systems. I translate mathematical insights into
+          efficient, high-performance software using Python, C++, and modern computational tools. My work spans building
+          scalable solvers and optimising algorithms, aimed at solving challenging engineering and scientific problems.
+          I am passionate about bridging theory and implementation to create practical, reliable solutions for
+          real-world systems.
+        </p>
+        <a href="docs/CV.pdf" class="cv-button" target="_blank">Download CV</a>
+      </div>
+
+    </section>
+
+    <section class="about-grid">
+
+      <div class="about-section">
+        <h2>What I Do</h2>
+        <p style="text-align: justify;">
+          I create computational tools and algorithms for high-dimensional systems with uncertainty, combining scalable
+          simulations, efficient numerical methods, and data-informed modelling to tackle practical challenges.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h2>Core Interests</h2>
+        <ul>
+          <li>Scientific & high-performance computing</li>
+          <li>Uncertainty quantification</li>
+          <li>Stochastic & numerical modelling</li>
+          <li>Quantum algorithms & resource estimation</li>
+          <li>Data-driven methods</li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      © 2026 Anastasia Istratuca
     </div>
+  </footer>
 
-    <div class="intro-box">
-      <h1>Anastasia Istratuca</h1>
-      <p class="personal-statement">
-        I am a computational mathematician with a PhD in Applied Mathematics, specialising in numerical simulation, uncertainty quantification, and algorithm design for complex systems. I translate mathematical insights into efficient, high-performance software using Python, C++, and modern computational tools. My work spans building scalable solvers and optimising algorithms, aimed at solving challenging engineering and scientific problems. I am passionate about bridging theory and implementation to create practical, reliable solutions for real-world systems.
-      </p>
-      <a href="CV.pdf" class="cv-button" target="_blank">Download CV</a>
-    </div>
-
-  </section>
-
-  <section class="about-grid">
-    
-    <div class="about-section">
-      <h2>What I Do</h2>
-      <p style="text-align: justify;">
-        I create computational tools and algorithms for high-dimensional systems with uncertainty, combining scalable simulations, efficient numerical methods, and data-informed modelling to tackle practical challenges.
-      </p>
-    </div>
-
-    <div class="about-section">
-      <h2>Core Interests</h2>
-      <ul>
-        <li>Scientific & high-performance computing</li>
-        <li>Uncertainty quantification</li>
-        <li>Stochastic & numerical modelling</li>
-        <li>Quantum algorithms & resource estimation</li>
-        <li>Data-driven methods</li>
-      </ul>
-    </div>
-
-  </section>
-
-</main>
-
-<footer>
-  <div class="footer-container">
-    © 2026 Anastasia Istratuca
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
