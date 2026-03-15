@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Anastasia Istratuca</title>
+  <meta name="description"
+    content="Applied mathematician specialising in scientific computing, numerical methods, and quantum algorithms.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo-and-toggle">
+        <strong><a href="../index.html" style="text-decoration: none; color: inherit;">Anastasia Istratuca</a></strong>
+        <button id="toggle">🌙</button>
+      </div>
+
+      <nav>
+        <a href="../index.html">0. About</a>
+        <a href="work.html">1. Work</a>
+        <a href="projects.html" style="font-size: 28px;"><b>2. Projects</b></a>
+        <a href="skills.html">3. Skills</a>
+        <a href="contact.html">4. Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="content-container">
+
+    <p class="page-intro" style="font-size: large;">
+      Selected <i>research</i> and <i>computational</i> projects spanning uncertainty quantification, numerical
+      simulation, and quantum algorithms.
+    </p>
+
+    <div class="projects-grid">
+
+      <a href="projects.html#circulant-embedding" class="project-card">
+        <h3>Smoothed Circulant Embedding</h3>
+        <p>New random field sampling method enabling efficient uncertainty quantification via MLMC.</p>
+        <div class="tags">Python • Random Fields • MLMC • PDEs</div>
+      </a>
+
+      <a href="projects.html#tensor-factorisation" class="project-card">
+        <h3>Tensor Factorisation</h3>
+        <p>Factorisation method based on variational optimisation for high-dimensional tensors.</p>
+        <div class="tags">Python • Quantum • Tensors</div>
+      </a>
+
+      <a href="projects.html#mlmc-smoothness" class="project-card">
+        <h3>Level-Dependent Smoothness</h3>
+        <p>Multilevel Monte Carlo methods for stochastic PDEs with varying regularity.</p>
+        <div class="tags">Python • Monte Carlo • PDEs • UQ</div>
+      </a>
+
+      <a href="projects.html#chaotic-systems" class="project-card">
+        <h3>MLMC for Chaotic Systems</h3>
+        <p>Exploring uncertainty quantification in chaotic systems via stochastic differential equations.</p>
+        <div class="tags">C++ • UQ • SDEs</div>
+      </a>
+
+      <a href="projects.html#radiative-transport" class="project-card">
+        <h3>Radiative Transport MLMC</h3>
+        <p>Variance reduction methods for radiative transport models with random input.</p>
+        <div class="tags">C++ • Monte Carlo • Kinetic equations</div>
+      </a>
+
+      <a href="projects.html#model-selection" class="project-card">
+        <h3>Model Selection by Simulation</h3>
+        <p>Simulation-based methods for selecting statistical models with finance applications.</p>
+        <div class="tags">Python • Statistics • Simulation</div>
+      </a>
+
+      <a href="projects.html#quantum-annealing" class="project-card">
+        <h3>Simulating Quantum Annealing</h3>
+        <p>Numerical simulations of quantum and thermal annealing optimisation methods.</p>
+        <div class="tags">Python • C++ • Quantum • Optimisation</div>
+      </a>
+
+      <a href="projects.html#deep-learning-bvp" class="project-card">
+        <h3>Deep Learning for PDEs</h3>
+        <p>Exploring neural network methods for solving boundary value problems.</p>
+        <div class="tags">MATLAB • ML • PDEs</div>
+      </a>
+
+      <a href="projects.html#neural-networks" class="project-card">
+        <h3>Neural Network Approximation</h3>
+        <p>Approximation of nonlinear functions using neural networks.</p>
+        <div class="tags">MATLAB • ML • Approximation</div>
+      </a>
+
+    </div>
+
+    <section class="project-section" id="mlmc-smoothness">
+
+      <h2 style="color: #93252a; text-decoration: underline double;">MLMC with Level-Dependent Smoothness</h2>
+
+      <p style="color: #ccc; font-size: large">Read more about this in Chapter 4 of my <strong>
+          <a href="https://era.ed.ac.uk/items/e6210c64-0593-405f-ae2d-600fae342161" class="links" target="_blank"
+            style="text-decoration:underline;">
+            PhD Thesis</a></strong>.</p>
+      <p class="project-summary">
+        Investigated multilevel Monte Carlo methods for PDEs with random coefficients, varying the regularity of the
+        random field across discretisation levels.
+      </p>
+
+      <div class="project-grid">
+
+        <div>
+          <h3 style="color: #93252a;"><i>Problem</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Standard MLMC methods require the first-level approximation to be smooth enough to capture the bulk
+            behaviour of the PDE solution. In many PDE models with random coefficients this assumption
+            breaks down, leading to inefficient estimators.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Solution</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Investigated a modified MLMC framework incorporating a smoothing technique by exploting different
+            regularities of the random field coefficient to control variance growth and improve estimator convergence.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Tools</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Python • Scientific Computing • Monte Carlo Simulation • PDE Modelling
+          </p>
+
+          <h3 style="color: #93252a;"><i>Results</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Derived error analysis and used it to inform the levels of regularity on each level. This work shows that the best choice of such a sequence is constant across levels, i.e. using the same regularity.
+          </p>
+        </div>
+
+        <div class="project-images">
+
+          <img src="../images/mlmc-smoothness/random_field_01.png">
+          <img src="../images/mlmc-smoothness/random_field_03.png">
+
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      © 2026 Anastasia Istratuca
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+
+</body>
+
+</html>

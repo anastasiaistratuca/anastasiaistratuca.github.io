@@ -348,7 +348,7 @@ footer {
   font-style: italic;
 }
 
-.projects-grid {
+.projects-grid-work {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
@@ -369,7 +369,7 @@ footer {
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(147, 37, 42, 0.6);
+  box-shadow: 0 8px 20px rgba(147, 37, 42, 0.6);
 }
 
 .project-card h4 {
@@ -379,10 +379,17 @@ footer {
   color: #ccc;
 }
 
+.project-card h3{
+  margin-top:0;
+  margin-bottom:10px;
+  font-size:18px;
+  color: #ccc;
+}
+
 .project-card p {
   font-size: 14px;
   color: #fffcf4;
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: left;
 }
 
@@ -390,4 +397,37 @@ footer {
   width: 100%;
   border-radius: 6px;
   margin-bottom: 10px;
+}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:24px;
+  margin-top:40px;
+}
+
+.tags{
+  margin-top:12px;
+  font-size:12px;
+  color:inherit;
+}
+
+.project-section{
+  margin-top:90px;
+  padding-top:60px;
+  border-top:1px solid #e5e5e5;
+}
+
+.project-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px; 
+  margin-top:-20px;
+}
+
+.project-images img{
+  width:45%;
+  border-radius:6px;
+  margin-bottom:15px;
+  padding-top: 20%;
 }
