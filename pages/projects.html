@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+  <div class="scroll-progress"></div>
   <header>
     <div class="nav-container">
       <div class="logo-and-toggle">
@@ -38,55 +38,55 @@
 
     <div class="projects-grid">
 
-      <a href="projects.html#circulant-embedding" class="project-card">
+      <a href="projects.html#circulant-embedding" class="project-card reveal" style="--order:1">
         <h3>Smoothed Circulant Embedding</h3>
         <p>New random field sampling method enabling efficient uncertainty quantification via MLMC.</p>
         <div class="tags">Python • Random Fields • MLMC • PDEs</div>
       </a>
 
-      <a href="projects.html#tensor-factorisation" class="project-card">
-        <h3>Tensor Factorisation</h3>
-        <p>Factorisation method based on variational optimisation for high-dimensional tensors.</p>
-        <div class="tags">Python • Quantum • Tensors</div>
-      </a>
-
-      <a href="projects.html#mlmc-smoothness" class="project-card">
+      <a href="projects.html#mlmc-smoothness" class="project-card reveal" style="--order:2">
         <h3>Level-Dependent Smoothness</h3>
         <p>Multilevel Monte Carlo methods for stochastic PDEs with varying regularity.</p>
         <div class="tags">Python • Monte Carlo • PDEs • UQ</div>
       </a>
 
-      <a href="projects.html#chaotic-systems" class="project-card">
+      <a href="projects.html#tensor-factorisation" class="project-card reveal" style="--order:3">
+        <h3>Tensor Factorisation</h3>
+        <p>Factorisation method based on variational optimisation for high-dimensional tensors.</p>
+        <div class="tags">Python • Quantum • Tensors</div>
+      </a>
+
+      <a href="projects.html#chaotic-systems" class="project-card reveal" style="--order:4">
         <h3>MLMC for Chaotic Systems</h3>
         <p>Exploring uncertainty quantification in chaotic systems via stochastic differential equations.</p>
         <div class="tags">C++ • UQ • SDEs</div>
       </a>
 
-      <a href="projects.html#radiative-transport" class="project-card">
+      <a href="projects.html#radiative-transport" class="project-card reveal" style="--order:5">
         <h3>Radiative Transport MLMC</h3>
         <p>Variance reduction methods for radiative transport models with random input.</p>
         <div class="tags">C++ • Monte Carlo • Kinetic equations</div>
       </a>
 
-      <a href="projects.html#model-selection" class="project-card">
+      <a href="projects.html#model-selection" class="project-card reveal" style="--order:6">
         <h3>Model Selection by Simulation</h3>
         <p>Simulation-based methods for selecting statistical models with finance applications.</p>
         <div class="tags">Python • Statistics • Simulation</div>
       </a>
 
-      <a href="projects.html#quantum-annealing" class="project-card">
+      <a href="projects.html#quantum-annealing" class="project-card reveal" style="--order:7">
         <h3>Simulating Quantum Annealing</h3>
         <p>Numerical simulations of quantum and thermal annealing optimisation methods.</p>
         <div class="tags">Python • C++ • Quantum • Optimisation</div>
       </a>
 
-      <a href="projects.html#deep-learning-bvp" class="project-card">
+      <a href="projects.html#deep-learning-bvp" class="project-card reveal" style="--order:8">
         <h3>Deep Learning for PDEs</h3>
         <p>Exploring neural network methods for solving boundary value problems.</p>
         <div class="tags">MATLAB • ML • PDEs</div>
       </a>
 
-      <a href="projects.html#neural-networks" class="project-card">
+      <a href="projects.html#neural-networks" class="project-card reveal" style="--order:9">
         <h3>Neural Network Approximation</h3>
         <p>Approximation of nonlinear functions using neural networks.</p>
         <div class="tags">MATLAB • ML • Approximation</div>
@@ -94,17 +94,19 @@
 
     </div>
 
-    <section class="project-section" id="mlmc-smoothness">
+    <section class="project-section reveal" id="circulant-embedding">
 
-      <h2 style="color: #93252a; text-decoration: underline double;">MLMC with Level-Dependent Smoothness</h2>
+      <h2 style="color: #93252a; text-decoration: underline double; text-align: left;">Smoothed Circulant Embedding
+      </h2>
 
-      <p style="color: #ccc; font-size: large">Read more about this in Chapter 4 of my <strong>
-          <a href="https://era.ed.ac.uk/items/e6210c64-0593-405f-ae2d-600fae342161" class="links" target="_blank"
-            style="text-decoration:underline;">
-            PhD Thesis</a></strong>.</p>
-      <p class="project-summary">
-        Investigated multilevel Monte Carlo methods for PDEs with random coefficients, varying the regularity of the
-        random field across discretisation levels.
+      <p style="color: #ccc; font-size: large; text-align: left;">Read more about this <strong>
+          <a href="https://academic.oup.com/imajna/article/45/5/3138/8029977" class="links" target="_blank"
+            style="text-decoration:underline">
+            here</a></strong>.</p>
+      <p class="project-summary" style="text-align: left;">
+        Introduced a method for obtaining a smooth approxmation of a random field sample and quantified the
+        approximation error. Integrated this into multilevel Monte Carlo for elliptic PDEs with random coefficients,
+        with applications in groundwater flow modelling.
       </p>
 
       <div class="project-grid">
@@ -113,8 +115,70 @@
           <h3 style="color: #93252a;"><i>Problem</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
             Standard MLMC methods require the first-level approximation to be smooth enough to capture the bulk
-            behaviour of the PDE solution. In many PDE models with random coefficients this assumption
-            breaks down, leading to inefficient estimators.
+            behaviour of the PDE solution. In many PDE models with random coefficients this assumption breaks down,
+            leading to inefficient estimators.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Solution</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Investigated a modified MLMC framework by adjusting the circulant embedding method to produce smooth
+            approximations of samples from extremely oscillatory random fields, i.e. with small correlation length, high
+            variance and low regularity.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Tools</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Python • Scientific Computing • Random Fields • PDE modelling
+          </p>
+
+          <h3 style="color: #93252a;"><i>Results</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Derived error analysis and used it to inform the levels of regularity on each level. This work shows that
+            the best choice of such a sequence is constant across levels, i.e. using the same regularity.
+          </p>
+        </div>
+
+        <div class="project-images">
+
+          <img style="width: 60%; padding-left: 20%; padding-top: 5%;"
+            src="../images/ces/random_field_without_smoothing.png">
+          <img style="width: 60%; padding-left: 20%;" src="../images/ces/random_field_with_smoothing.png">
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="project-section reveal" id="mlmc-smoothness">
+
+      <h2 style="color: #93252a; text-decoration: underline double; text-align: right;">MLMC with Level-Dependent Smoothness</h2>
+
+      <p style="color: #ccc; font-size: large; text-align: right;">Read more about this in Chapter 4 of my <strong>
+          <a href="https://era.ed.ac.uk/items/e6210c64-0593-405f-ae2d-600fae342161" class="links" target="_blank"
+            style="text-decoration:underline;">
+            PhD Thesis</a></strong>.</p>
+      <p class="project-summary" style="text-align: right;">
+        Investigated multilevel Monte Carlo methods for PDEs with random coefficients, varying the regularity of the
+        random field across discretisation levels.
+      </p>
+
+      <div class="project-grid">
+
+        <div class="project-images">
+
+          <img style="width:50%; padding-left: 20%; padding-top: 5%;"
+            src="../images/mlmc-smoothness/random_field_01.png">
+          <img style="width:50%; padding-left: 20%;"
+            src="../images/mlmc-smoothness/random_field_03.png">
+
+        </div>
+
+        <div>
+          <h3 style="color: #93252a;"><i>Problem</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Standard MLMC methods require the first-level approximation to be smooth enough to capture the bulk
+            behaviour of the PDE solution. In many PDE models with random coefficients this assumption breaks down,
+            leading to inefficient estimators.
           </p>
 
           <h3 style="color: #93252a;"><i>Solution</i></h3>
@@ -125,20 +189,55 @@
 
           <h3 style="color: #93252a;"><i>Tools</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Python • Scientific Computing • Monte Carlo Simulation • PDE Modelling
+            Python • Scientific Computing • Random Fields • PDE Modelling
           </p>
 
           <h3 style="color: #93252a;"><i>Results</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Derived error analysis and used it to inform the levels of regularity on each level. This work shows that the best choice of such a sequence is constant across levels, i.e. using the same regularity.
+            Derived error analysis and used it to inform the levels of regularity on each MLMC level. This work shows
+            that the best choice of such a sequence is constant across levels, i.e. using the same regularity.
           </p>
         </div>
 
-        <div class="project-images">
+      </div>
 
-          <img src="../images/mlmc-smoothness/random_field_01.png">
-          <img src="../images/mlmc-smoothness/random_field_03.png">
+    </section>
 
+    <section class="project-section reveal" id="tensor-factorisation">
+
+      <h2 style="color: #93252a; text-decoration: underline double; text-align: left;">Tensor factorisation
+      </h2>
+
+      <p style="color: #ccc; font-size: large; text-align: left;">During my Riverlane internship, I implemented the method <strong>
+          <a href="http://arxiv.org/html/2502.15882v1" class="links" target="_blank"
+            style="text-decoration:underline">
+            here</a></strong>.</p>
+      <p class="project-summary" style="text-align: left;">
+        Implemented the Double Factorisation Tensor HyperContraction (DFTHC) method for high-dimensional tensors in quantum chemistry. 
+      </p>
+
+      <div class="project-grid">
+        <div>
+          <h3 style="color: #93252a;"><i>Problem</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Electronic structure problems are expressed through a Hamiltonian describing electron interactions given in the form of very-high dimensional tensors. Existing methods scale poorly with dimension and are computationally intractable. 
+          </p>
+
+          <h3 style="color: #93252a;"><i>Solution</i> (as per <a href="http://arxiv.org/html/2502.15882v1" class="links" target="_blank"
+            style="text-decoration:underline">Rubin et al.</a>)</h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Implement a new Hamiltonian factorisation method that sits between double factorization and tensor hypercontraction. This gives a flexible trade-off between compression and circuit cost.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Tools</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Python • JAX • Scientific Computing • Quantum Algorithms
+          </p>
+
+          <h3 style="color: #93252a;"><i>Results</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Wrote Python implementation of DFTHC algorithm and obtained cost savings of 4x - 195x for realistic molecular systems (e.g., iron-sulfur clusters and iron-molybdenum cofactor FeMoco).
+          </p>
         </div>
 
       </div>

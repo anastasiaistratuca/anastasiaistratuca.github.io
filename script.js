@@ -18,3 +18,38 @@ toggle.addEventListener("click", function () {
     toggle.textContent = "🌙";
   }
 });
+
+const observer = new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+
+    if(entry.isIntersecting){
+      entry.target.classList.add("active");
+    }
+
+  });
+
+}, {
+  threshold:0.15
+});
+
+document.querySelectorAll(".reveal").forEach((el) => {
+  observer.observe(el);
+});
+
+document.querySelectorAll(".reveal-timeline").forEach((el) => {
+  observer.observe(el);
+});
+
+const progressBar = document.querySelector(".scroll-progress");
+
+window.addEventListener("scroll", () => {
+
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+
+  const progress = (scrollTop / docHeight) * 100;
+
+  progressBar.style.width = progress + "%";
+
+});
