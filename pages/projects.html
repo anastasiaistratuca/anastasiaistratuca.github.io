@@ -21,7 +21,7 @@
       <nav>
         <a href="../index.html">0. About</a>
         <a href="work.html">1. Work</a>
-        <a href="projects.html" style="font-size: 28px;"><b>2. Projects</b></a>
+        <a href="projects.html" class="active"><b>2. Projects</b></a>
         <a href="skills.html">3. Skills</a>
         <a href="contact.html">4. Contact</a>
       </nav>
@@ -36,6 +36,7 @@
       simulation, and quantum algorithms.
     </p>
 
+    <!----------------------------- Project Grid ----------------------------->
     <div class="projects-grid">
 
       <a href="projects.html#circulant-embedding" class="project-card reveal" style="--order:1">
@@ -94,6 +95,8 @@
 
     </div>
 
+    <!------------------------- Circulant Embedding ------------------------->
+
     <section class="project-section reveal" id="circulant-embedding">
 
       <h2 style="color: #93252a; text-decoration: underline double; text-align: left;">Smoothed Circulant Embedding
@@ -149,9 +152,11 @@
 
     </section>
 
+    <!----------------------------- Smoothness ----------------------------->
     <section class="project-section reveal" id="mlmc-smoothness">
 
-      <h2 style="color: #93252a; text-decoration: underline double; text-align: right;">MLMC with Level-Dependent Smoothness</h2>
+      <h2 style="color: #93252a; text-decoration: underline double; text-align: right;">MLMC with Level-Dependent
+        Smoothness</h2>
 
       <p style="color: #ccc; font-size: large; text-align: right;">Read more about this in Chapter 4 of my <strong>
           <a href="https://era.ed.ac.uk/items/e6210c64-0593-405f-ae2d-600fae342161" class="links" target="_blank"
@@ -168,8 +173,7 @@
 
           <img style="width:50%; padding-left: 20%; padding-top: 5%;"
             src="../images/mlmc-smoothness/random_field_01.png">
-          <img style="width:50%; padding-left: 20%;"
-            src="../images/mlmc-smoothness/random_field_03.png">
+          <img style="width:50%; padding-left: 20%;" src="../images/mlmc-smoothness/random_field_03.png">
 
         </div>
 
@@ -203,30 +207,35 @@
 
     </section>
 
+    <!------------------------ Tensor factorisation ------------------------>
     <section class="project-section reveal" id="tensor-factorisation">
 
       <h2 style="color: #93252a; text-decoration: underline double; text-align: left;">Tensor factorisation
       </h2>
 
-      <p style="color: #ccc; font-size: large; text-align: left;">During my Riverlane internship, I implemented the method <strong>
-          <a href="http://arxiv.org/html/2502.15882v1" class="links" target="_blank"
-            style="text-decoration:underline">
+      <p style="color: #ccc; font-size: large; text-align: left;">During my Riverlane internship, I implemented the
+        method <strong>
+          <a href="http://arxiv.org/html/2502.15882v1" class="links" target="_blank" style="text-decoration:underline">
             here</a></strong>.</p>
       <p class="project-summary" style="text-align: left;">
-        Implemented the Double Factorisation Tensor HyperContraction (DFTHC) method for high-dimensional tensors in quantum chemistry. 
+        Implemented the Double Factorisation Tensor HyperContraction (DFTHC) method for high-dimensional tensors in
+        quantum chemistry.
       </p>
 
       <div class="project-grid">
         <div>
           <h3 style="color: #93252a;"><i>Problem</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Electronic structure problems are expressed through a Hamiltonian describing electron interactions given in the form of very-high dimensional tensors. Existing methods scale poorly with dimension and are computationally intractable. 
+            Electronic structure problems are expressed through a Hamiltonian describing electron interactions given in
+            the form of very-high dimensional tensors. Existing methods scale poorly with dimension and are
+            computationally intractable.
           </p>
 
-          <h3 style="color: #93252a;"><i>Solution</i> (as per <a href="http://arxiv.org/html/2502.15882v1" class="links" target="_blank"
-            style="text-decoration:underline">Rubin et al.</a>)</h3>
+          <h3 style="color: #93252a;"><i>Solution</i> (as per <a href="http://arxiv.org/html/2502.15882v1" class="links"
+              target="_blank" style="text-decoration:underline">Rubin et al.</a>)</h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Implement a new Hamiltonian factorisation method that sits between double factorization and tensor hypercontraction. This gives a flexible trade-off between compression and circuit cost.
+            Implement a new Hamiltonian factorisation method that sits between double factorization and tensor
+            hypercontraction. This gives a flexible trade-off between compression and circuit cost.
           </p>
 
           <h3 style="color: #93252a;"><i>Tools</i></h3>
@@ -236,7 +245,63 @@
 
           <h3 style="color: #93252a;"><i>Results</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Wrote Python implementation of DFTHC algorithm and obtained cost savings of 4x - 195x for realistic molecular systems (e.g., iron-sulfur clusters and iron-molybdenum cofactor FeMoco).
+            Wrote Python implementation of DFTHC algorithm and obtained cost savings of 4x - 195x for realistic
+            molecular systems (e.g., iron-sulfur clusters and iron-molybdenum cofactor FeMoco).
+          </p>
+        </div>
+
+        <div class="project-images">
+
+          <img style="width: 70%; padding-left: 10%; padding-top: 20%;"
+            src="../images/tensor-factorisation/4d_tensor.png">
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-------------------------- Chaotic systems -------------------------->
+    <section class="project-section reveal" id="chaotic-systems">
+
+      <h2 style="color: #93252a; text-decoration: underline double; text-align: right;">MLMC for Chaotic Systems</h2>
+
+      <p style="color: #ccc; font-size: large; text-align: right;">Read more about this in Chapter 5 of my <strong>
+          <a href="https://era.ed.ac.uk/items/e6210c64-0593-405f-ae2d-600fae342161" class="links" target="_blank"
+            style="text-decoration:underline;">
+            PhD Thesis</a></strong>.</p>
+      <p class="project-summary" style="text-align: right;">
+        Explored multilevel Monte Carlo methods for chaotic systems with random coefficients, using the corresponding
+        SDE as a control variate and varying the amount of noise with MLMC level.
+      </p>
+
+      <div class="project-grid">
+
+        <div class="project-images">
+          <p style="padding-left: 37%; padding-top: 10%;">Lorenz63 trajectory</p>
+          <img style="width:60%; padding-left: 20%;"
+            src="../images/chaotics-systems/lorenz63_traj.png">
+
+        </div>
+
+        <div>
+          <h3 style="color: #93252a;"><i>Problem</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Chaotic systems are extremely sensitive to initial conditions. This means that small differences in initial conditions, which could arise, for example, from measurement or numerical errors, lead to widely diverging paths, rendering the long-term prediction of their behaviour computationally expensive in practice. 
+          </p>
+
+          <h3 style="color: #93252a;"><i>Solution</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Investigated a modified MLMC estimator using a change of measure which allows one to adjust the amount of noise on each MLMC level. Carried out analysis to inform the choice of noise sequence and numerical experiments on the Lorenz63 system.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Tools</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            C++ • Multi-threading • Chaotic Systems • Uncertainty Quantification
+          </p>
+
+          <h3 style="color: #93252a;"><i>Results</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            This work shows that decreasing the noise with MLMC level leads to <i>higher</i> computational complexity than the corresponding standard Monte Carlo approach.
           </p>
         </div>
 

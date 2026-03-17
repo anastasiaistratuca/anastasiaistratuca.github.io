@@ -103,6 +103,35 @@ nav a {
   color: var(--text);
   margin-left: 25px;
   font-size: x-large;
+  padding:6px 5px;
+  border-radius:6px;
+  transition:all 0.2s ease;
+  position:relative;
+}
+
+nav a:hover{
+  font-size: 28px;
+}
+
+nav a::after{
+  content:"";
+  position:absolute;
+  left:6px;
+  bottom:2px;
+  width:0%;
+  height:2px;
+  background:#9bae98;
+  transition:width 0.2s ease;
+}
+
+nav a:hover::after{
+  width:calc(100% - 12px);
+}
+
+nav a.active{
+  font-size: 28px;
+  text-decoration: underline #9bae98;
+  text-underline-offset: 8px;
 }
 
 .content-container {
@@ -220,7 +249,6 @@ footer {
   text-decoration: underline;
   opacity: 0.5;
   font-size: 17px;
-  font-size-adjust: 20px;
 }
 
 /* timeline bar */
@@ -468,4 +496,5 @@ footer {
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(147, 37, 42, 0.6);
+  transition-delay: 0ms;
 }
