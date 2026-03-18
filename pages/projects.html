@@ -63,9 +63,9 @@
         <div class="tags">C++ • UQ • SDEs</div>
       </a>
 
-      <a href="projects.html#radiative-transport" class="project-card reveal" style="--order:5">
-        <h3>Radiative Transport MLMC</h3>
-        <p>Variance reduction methods for radiative transport models with random input.</p>
+      <a href="projects.html#radiative-transfer" class="project-card reveal" style="--order:5">
+        <h3>Radiative Transfer MLMC</h3>
+        <p>Variance reduction methods for radiative transfer models with random input.</p>
         <div class="tags">C++ • Monte Carlo • Kinetic equations</div>
       </a>
 
@@ -302,6 +302,101 @@
           <h3 style="color: #93252a;"><i>Results</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
             This work shows that decreasing the noise with MLMC level leads to <i>higher</i> computational complexity than the corresponding standard Monte Carlo approach.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!------------------------ Radiative transfer ------------------------>
+    <section class="project-section reveal" id="radiative-transfer">
+
+      <h2 style="color: #93252a; text-decoration: underline double; text-align: left;">MLMC for radiative transfer
+      </h2>
+
+       <p style="color: #ccc; font-size: large; text-align: left;">Read more about this in Chapter 6 of my <strong>
+          <a href="https://era.ed.ac.uk/items/e6210c64-0593-405f-ae2d-600fae342161" class="links" target="_blank"
+            style="text-decoration:underline;">
+            PhD Thesis</a></strong>.</p>
+      <p class="project-summary" style="text-align: left;">
+        Studied the application of multilevel Monte Carlo methods to radiative transfer models, taking advantage of the multiscale nature of the equation. The estimator leverages different model approximations from fully kinetic to fully diffusive.
+      </p>
+
+      <div class="project-grid">
+        <div>
+          <h3 style="color: #93252a;"><i>Problem</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Radiative transfer equations are extensively used in several important physical applications. The numerical evaluation of the model has a high computational cost. The UQ task further adds to the complexity of producing accurate simulations, rendering it computationally intractable.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Solution</i> (as per <a href="http://arxiv.org/html/2502.15882v1" class="links"
+              target="_blank" style="text-decoration:underline">Rubin et al.</a>)</h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Devise a hierarchy of low fidelity models based on a family of increasingly diffusive approximations of the original model. This also requires an appropriate sequence of meshes for their numerical approximation, which we also investigate. 
+          </p>
+
+          <h3 style="color: #93252a;"><i>Tools</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            C++ • IMEX Methods • Scientific Computing • Radiative Transfer
+          </p>
+
+          <h3 style="color: #93252a;"><i>Results</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            This is very much still work in progress, but preliminary numerical experiments indicate that exploiting such a hierarchy of models could lead to significant computational savings.
+          </p>
+        </div>
+
+        <div class="project-images">
+
+          <img style="width: 60%; padding-left: 20%; padding-top: 5%;"
+            src="../images/radiative-transfer/density.png">
+          <img style="width: 60%; padding-left: 20%;" src="../images/radiative-transfer/flux.png">
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-------------------------- Chaotic systems -------------------------->
+    <section class="project-section reveal" id="model-selection">
+
+      <h2 style="color: #93252a; text-decoration: underline double; text-align: right;">Model Selection by Simulation</h2>
+
+      <p style="color: #ccc; font-size: large; text-align: right;">This work was a group project as part of PhD training.</p>
+      <p class="project-summary" style="text-align: right;">
+        Investigated the capabilities of Generative Adversarial Networks (GANs) for calibrating SDE models. We generate synthetic sample paths from the geometric Brownian motion (GBM) with time-dependent drift and volatility, and use these paths to train the GAN.
+      </p>
+
+      <div class="project-grid">
+
+        <div class="project-images">
+
+            <img style="width: 60%; padding-left: 20%; padding-top: 5%;"
+            src="../images/model-selection/GAN_training_loss_4d.png">
+          <img style="width: 60%; padding-left: 20%;" src="../images/model-selection/discriminator_predictions_4d.png">
+
+        </div>
+
+        <div>
+          <h3 style="color: #93252a;"><i>Problem</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Modern hardware advancements make it possible to process large amounts of data with ease. However, the sheer volume of available data means that no single statistical or machine learning model can successfully handle every type of dataset. This limitation highlights the importance of model selection.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Solution</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Our approach to model selection focuses on identifying a suitable set of candidate models. We model financial data using SDEs with time-dependent drift and volatility. This enables intuitive model identification by generating sample paths and selecting the parameters that produce outputs matching the observed data.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Tools</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Python • TensorFlow • Keras • GANs
+          </p>
+
+          <h3 style="color: #93252a;"><i>Results</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            We were able to train the network and infer predictions on 25-dimensional data with 18% error rate.
           </p>
         </div>
 
