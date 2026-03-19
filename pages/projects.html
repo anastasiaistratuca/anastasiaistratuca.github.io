@@ -278,20 +278,23 @@
 
         <div class="project-images">
           <p style="padding-left: 37%; padding-top: 10%;">Lorenz63 trajectory</p>
-          <img style="width:60%; padding-left: 20%;"
-            src="../images/chaotics-systems/lorenz63_traj.png">
+          <img style="width:60%; padding-left: 20%;" src="../images/chaotics-systems/lorenz63_traj.png">
 
         </div>
 
         <div>
           <h3 style="color: #93252a;"><i>Problem</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Chaotic systems are extremely sensitive to initial conditions. This means that small differences in initial conditions, which could arise, for example, from measurement or numerical errors, lead to widely diverging paths, rendering the long-term prediction of their behaviour computationally expensive in practice. 
+            Chaotic systems are extremely sensitive to initial conditions. This means that small differences in initial
+            conditions, which could arise, for example, from measurement or numerical errors, lead to widely diverging
+            paths, rendering the long-term prediction of their behaviour computationally expensive in practice.
           </p>
 
           <h3 style="color: #93252a;"><i>Solution</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Investigated a modified MLMC estimator using a change of measure which allows one to adjust the amount of noise on each MLMC level. Carried out analysis to inform the choice of noise sequence and numerical experiments on the Lorenz63 system.
+            Investigated a modified MLMC estimator using a change of measure which allows one to adjust the amount of
+            noise on each MLMC level. Carried out analysis to inform the choice of noise sequence and numerical
+            experiments on the Lorenz63 system.
           </p>
 
           <h3 style="color: #93252a;"><i>Tools</i></h3>
@@ -301,7 +304,8 @@
 
           <h3 style="color: #93252a;"><i>Results</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            This work shows that decreasing the noise with MLMC level leads to <i>higher</i> computational complexity than the corresponding standard Monte Carlo approach.
+            This work shows that decreasing the noise with MLMC level leads to <i>higher</i> computational complexity
+            than the corresponding standard Monte Carlo approach.
           </p>
         </div>
 
@@ -315,25 +319,30 @@
       <h2 style="color: #93252a; text-decoration: underline double; text-align: left;">MLMC for radiative transfer
       </h2>
 
-       <p style="color: #ccc; font-size: large; text-align: left;">Read more about this in Chapter 6 of my <strong>
+      <p style="color: #ccc; font-size: large; text-align: left;">Read more about this in Chapter 6 of my <strong>
           <a href="https://era.ed.ac.uk/items/e6210c64-0593-405f-ae2d-600fae342161" class="links" target="_blank"
             style="text-decoration:underline;">
             PhD Thesis</a></strong>.</p>
       <p class="project-summary" style="text-align: left;">
-        Studied the application of multilevel Monte Carlo methods to radiative transfer models, taking advantage of the multiscale nature of the equation. The estimator leverages different model approximations from fully kinetic to fully diffusive.
+        Studied the application of multilevel Monte Carlo methods to radiative transfer models, taking advantage of the
+        multiscale nature of the equation. The estimator leverages different model approximations from fully kinetic to
+        fully diffusive.
       </p>
 
       <div class="project-grid">
         <div>
           <h3 style="color: #93252a;"><i>Problem</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Radiative transfer equations are extensively used in several important physical applications. The numerical evaluation of the model has a high computational cost. The UQ task further adds to the complexity of producing accurate simulations, rendering it computationally intractable.
+            Radiative transfer equations are extensively used in several important physical applications. The numerical
+            evaluation of the model has a high computational cost. The UQ task further adds to the complexity of
+            producing accurate simulations, rendering it computationally intractable.
           </p>
 
-          <h3 style="color: #93252a;"><i>Solution</i> (as per <a href="http://arxiv.org/html/2502.15882v1" class="links"
-              target="_blank" style="text-decoration:underline">Rubin et al.</a>)</h3>
+          <h3 style="color: #93252a;"><i>Solution</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Devise a hierarchy of low fidelity models based on a family of increasingly diffusive approximations of the original model. This also requires an appropriate sequence of meshes for their numerical approximation, which we also investigate. 
+            Devise a hierarchy of low fidelity models based on a family of increasingly diffusive approximations of the
+            original model. This also requires an appropriate sequence of meshes for their numerical approximation,
+            which we also investigate.
           </p>
 
           <h3 style="color: #93252a;"><i>Tools</i></h3>
@@ -343,14 +352,14 @@
 
           <h3 style="color: #93252a;"><i>Results</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            This is very much still work in progress, but preliminary numerical experiments indicate that exploiting such a hierarchy of models could lead to significant computational savings.
+            This is very much still work in progress, but preliminary numerical experiments indicate that exploiting
+            such a hierarchy of models could lead to significant computational savings.
           </p>
         </div>
 
         <div class="project-images">
 
-          <img style="width: 60%; padding-left: 20%; padding-top: 5%;"
-            src="../images/radiative-transfer/density.png">
+          <img style="width: 60%; padding-left: 20%; padding-top: 5%;" src="../images/radiative-transfer/density.png">
           <img style="width: 60%; padding-left: 20%;" src="../images/radiative-transfer/flux.png">
 
         </div>
@@ -358,21 +367,25 @@
 
     </section>
 
-    <!-------------------------- Chaotic systems -------------------------->
+    <!-------------------------- Model selection -------------------------->
     <section class="project-section reveal" id="model-selection">
 
-      <h2 style="color: #93252a; text-decoration: underline double; text-align: right;">Model Selection by Simulation</h2>
+      <h2 style="color: #93252a; text-decoration: underline double; text-align: right;">Model Selection by Simulation
+      </h2>
 
-      <p style="color: #ccc; font-size: large; text-align: right;">This work was a group project as part of PhD training.</p>
+      <p style="color: #ccc; font-size: large; text-align: right;">This work was a group project as part of PhD
+        training.</p>
       <p class="project-summary" style="text-align: right;">
-        Investigated the capabilities of Generative Adversarial Networks (GANs) for calibrating SDE models. We generate synthetic sample paths from the geometric Brownian motion (GBM) with time-dependent drift and volatility, and use these paths to train the GAN.
+        Investigated the capabilities of Generative Adversarial Networks (GANs) for calibrating SDE models. We generate
+        synthetic sample paths from the geometric Brownian motion (GBM) with time-dependent drift and volatility, and
+        use these paths to train the GAN.
       </p>
 
       <div class="project-grid">
 
         <div class="project-images">
 
-            <img style="width: 60%; padding-left: 20%; padding-top: 5%;"
+          <img style="width: 60%; padding-left: 20%; padding-top: 5%;"
             src="../images/model-selection/GAN_training_loss_4d.png">
           <img style="width: 60%; padding-left: 20%;" src="../images/model-selection/discriminator_predictions_4d.png">
 
@@ -381,12 +394,17 @@
         <div>
           <h3 style="color: #93252a;"><i>Problem</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Modern hardware advancements make it possible to process large amounts of data with ease. However, the sheer volume of available data means that no single statistical or machine learning model can successfully handle every type of dataset. This limitation highlights the importance of model selection.
+            Modern hardware advancements make it possible to process large amounts of data with ease. However, the sheer
+            volume of available data means that no single statistical or machine learning model can successfully handle
+            every type of dataset. This limitation highlights the importance of model selection.
           </p>
 
           <h3 style="color: #93252a;"><i>Solution</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
-            Our approach to model selection focuses on identifying a suitable set of candidate models. We model financial data using SDEs with time-dependent drift and volatility. This enables intuitive model identification by generating sample paths and selecting the parameters that produce outputs matching the observed data.
+            Our approach to model selection focuses on identifying a suitable set of candidate models. We model
+            financial data using SDEs with time-dependent drift and volatility. This enables intuitive model
+            identification by generating sample paths and selecting the parameters that produce outputs matching the
+            observed data.
           </p>
 
           <h3 style="color: #93252a;"><i>Tools</i></h3>
@@ -397,6 +415,104 @@
           <h3 style="color: #93252a;"><i>Results</i></h3>
           <p style="text-align: justify; margin-top: -10px;">
             We were able to train the network and infer predictions on 25-dimensional data with 18% error rate.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!------------------------ Quantum Annealing ------------------------>
+    <section class="project-section reveal" id="quantum-annealing">
+
+      <h2 style="color: #93252a; text-decoration: underline double; text-align: left;">Simulated Quantum Annealing
+      </h2>
+
+      <p style="color: #ccc; font-size: large; text-align: left;">This work was a group project as part of PhD training.
+      </p>
+      <p class="project-summary" style="text-align: left;">
+        Compared simulation results ran on the D-Wave quantum annealer with results from the stochastic Landau-Lifshitz
+        (LL) equation which models thermal annealing. This required developing a new geometric numerical integrator.
+      </p>
+
+      <div class="project-grid">
+        <div>
+          <h3 style="color: #93252a;"><i>Problem</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Standard numerical schemes for the Landau-Lifshitz equation often fail to preserve key physical and
+            geometric properties, such as spin norm conservation and correct energy behavior. This leads to inaccurate
+            long-time simulations, especially in the presence of damping and stochastic noise.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Solution</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            We construct a splitting-based geometric integrator by decomposing the Hamiltonian into coupling and
+            external field components. The method combines exact solutions of conservative, dissipative, and stochastic
+            parts to ensure preservation of geometric constraints.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Tools</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Python • Numba • C++ • Geometric Integration • SDEs
+          </p>
+
+          <h3 style="color: #93252a;"><i>Results</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            The integrator maintains unit spin length and reproduces energy conservation or dissipation depending on
+            system parameters. The simulator was able to reach the global minimum of the energy landscape more often
+            than the quanum annealer.
+          </p>
+        </div>
+
+        <div class="project-images">
+          <img style="width:80%; padding-left: 10%; padding-top: 15%;" src="../images/quantum-annealing/Figure 1.png">
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-------------------------- Deep Learning BVP -------------------------->
+    <section class="project-section reveal" id="deep-learning-bvp">
+
+      <h2 style="color: #93252a; text-decoration: underline double; text-align: right;">Deap Learning for PDEs</h2>
+
+      <p style="color: #ccc; font-size: large; text-align: right;">Read more about this in <strong>
+          <a href="../docs/BVPs.pdf" class="links" target="_blank"
+            style="text-decoration:underline;">
+            this</a></strong> report.</p>
+      <p class="project-summary" style="text-align: right;">
+        This project investigates the use of artificial neural networks for function approximation and for solving boundary value problems (BVPs). It focuses on comparing neural network approaches with classical numerical methods and evaluating their performance in practice.
+      </p>
+
+      <div class="project-grid">
+
+        <div class="project-images">
+          <img style="width: 70%; padding-left: 20%; padding-top: 5%;"
+            src="../images/deep-learning-bvp/nnx2+y2.png">
+          <img style="width: 70%; padding-left: 20%;" src="../images/deep-learning-bvp/nnx3+y3.png">
+
+        </div>
+
+        <div>
+          <h3 style="color: #93252a;"><i>Problem</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Traditional methods such as polynomial interpolation, least squares, and finite difference/finite element methods struggle with issues like instability, poor extrapolation, and the curse of dimensionality. Additionally, solving nonlinear or high-dimensional PDEs remains computationally challenging with classical approaches.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Solution</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            We apply neural networks as flexible function approximators, training them via optimisation methods such as the Levenberg-Marquardt algorithm and interior-point methods. For BVPs, we use a variational formulation (Deep Ritz method) to convert the problem into a minimisation task solved by the network.
+          </p>
+
+          <h3 style="color: #93252a;"><i>Tools</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            MATLAB • Neural Networks • Optimisation • Numerical analysis
+          </p>
+
+          <h3 style="color: #93252a;"><i>Results</i></h3>
+          <p style="text-align: justify; margin-top: -10px;">
+            Neural networks achieve accurate approximations with relatively few parameters. They also successfully solve certain one-dimensional linear and nonlinear BVPs, but performance depends heavily on initialization, optimisation, and network design.
           </p>
         </div>
 
